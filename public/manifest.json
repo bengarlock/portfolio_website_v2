@@ -1,0 +1,9 @@
+{
+  "short_name": "Ben Garlock",
+  "name": "Ben Garlock - Software Engineer - New York",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
