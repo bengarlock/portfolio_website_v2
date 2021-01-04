@@ -1,0 +1,53 @@
+iframe.home-iframe {
+    margin: 0;
+    border: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#welcome-box {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    width: 20em;
+    height: 20em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(62, 62, 81, 0.5);
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#welcome-text {
+    user-select: none;
+    /*margin-left: 50%;*/
+    /*margin-top: 5% ;*/
+}
+
+#hello-text {
+    font-size: 80px;
+}
+
+#my-work:hover {
+    transition: .5s;
+    width: 200%;
+}
+
+#full-name {
+    color: #d81e6a;
+}
+
+#my-portfolio-button {
+    margin-top: 17%;
+    transition: .5s;
+    border-radius: 1%;
+}
+
+#my-portfolio-button:hover {
+    transition: .5s;
+    background-color: #5a2bbd;
+
+}
