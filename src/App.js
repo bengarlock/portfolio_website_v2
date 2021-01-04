@@ -2,25 +2,25 @@ import React from 'react'
 import "./stylesheets/App.css"
 import Home from "./Containers/Home";
 import About from "./Containers/About";
+import Navbar from "./Containers/Navbar";
+
+import { Element } from 'react-scroll'
+
 
 class App extends React.Component {
-
-    state = {
-        current_href: ''
-    }
-
-
-    onClickHandler = (page) => {
-        console.log(page)
-    }
 
 
     render() {
         return (
-            <div id="navbar" href={this.state.current_href}>
-                <Home onClickHandler={this.onClickHandler}/>
-                <About />
-            </div>
+            <>
+                <Navbar />
+                <Element name="home">
+                    <Home name="home" />
+                </Element>
+                <Element name="about">
+                    <About />
+                </Element>
+            </>
         );
     }
 

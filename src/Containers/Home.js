@@ -1,6 +1,7 @@
 import React from 'react';
 import Iframe from "../Tools/Iframe";
 import "../stylesheets/Home.css"
+import { Link } from 'react-scroll'
 
 class Home extends React.Component {
 
@@ -18,7 +19,9 @@ class Home extends React.Component {
                         <p id="hello-text">Hello.</p>
                         <p><span> My name is </span><span id="full-name"> Ben Garlock.</span></p>
                         <p>I'm a full-stack web developer.</p>
-                        <p id="my-portfolio-button" onClick={this.onClickHandler}>Enter</p>
+                        <p id="my-portfolio-button">
+                            <Link to="about" smooth={true} spy={true} duration={1000}>Enter</Link>
+                        </p>
                     </div>
                 </div>
 
