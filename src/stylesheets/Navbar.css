@@ -3,7 +3,7 @@
     width: 100vw;
     background-color: black;
     display: inline;
-    transition: 2s;
+    /*transition: 2s;*/
     color: white;
 }
 
@@ -11,7 +11,6 @@
     list-style-type:none;
     display: flex;
     font-size: 1.5em;
-    padding-top: 1em;
     user-select: none;
 }
 
