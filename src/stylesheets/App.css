@@ -12,3 +12,7 @@ body {
     width: 98vw;
     height: 100vh;
 }
+
+#navbar-wrapper {
+    display: none;
+}

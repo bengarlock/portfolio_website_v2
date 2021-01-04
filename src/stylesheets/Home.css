@@ -14,7 +14,7 @@ iframe.home-iframe {
     height: 20em;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-48.5%, -50%);
     background: rgba(62, 62, 81, 0.5);
     text-align: center;
     border-radius: 50%;
