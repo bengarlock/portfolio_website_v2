@@ -19,9 +19,9 @@ class Home extends React.Component {
                         <p id="hello-text">Hello.</p>
                         <p><span> My name is </span><span id="full-name"> Ben Garlock.</span></p>
                         <p>I'm a full-stack web developer.</p>
-                        <p id="my-portfolio-button">
-                            <Link to="about" smooth={true} spy={true} duration={1000}>Enter</Link>
-                        </p>
+                        <Link to="about" smooth={true} spy={true} duration={1000}>
+                            <p id="my-portfolio-button">Enter</p>
+                        </Link>
                     </div>
                 </div>
 
