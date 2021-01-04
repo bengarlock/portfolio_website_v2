@@ -5,6 +5,15 @@ import About from "./Containers/About";
 
 class App extends React.Component {
 
+    state = {
+        current_href: ''
+    }
+
+
+    onClickHandler = (page) => {
+        console.log(page)
+    }
+
 
     render() {
         return (
