@@ -28,9 +28,9 @@
 
 #menu-dropdown-wrapper {
     position: absolute;
-    width: 50vw;
-    height: 100vw;
-    background-color: #d81e6a;
+    width: 55vw;
+    height: 20em;
+    background-color: #282727;
     transition: .5s;
     z-index: 1;
 }
@@ -74,7 +74,6 @@
 
 
 @media only screen and (min-width: 728px) {
-
     #fullscreen-nav {
         display: initial;
     }

@@ -22,6 +22,9 @@ class Navbar extends React.Component {
 
     onClickHandler = (e) => {
         this.props.changePage(e.target.id)
+        if (this.state.menu) {
+            this.toggleMenu()
+        }
     }
 
     renderLinks = () => {
