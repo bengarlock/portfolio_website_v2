@@ -3,5 +3,14 @@
     top: 100vh;
     height: 100vh;
     width: 100vw;
-    background-color: darkgray;
+
+}
+
+.page-header {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 3em;
+    text-decoration: underline;
 }
