@@ -6,7 +6,7 @@ import { Link } from 'react-scroll'
 class Home extends React.Component {
 
     onClickHandler = () => {
-        this.props.onClickHandler("about")
+        this.props.changePage("about")
     }
 
     render() {
@@ -20,7 +20,7 @@ class Home extends React.Component {
                         <p><span> My name is </span><span id="full-name"> Ben Garlock.</span></p>
                         <p>I'm a full-stack web developer.</p>
                         <Link to="about" smooth={true} spy={true} duration={1000}>
-                            <p id="my-portfolio-button">Enter</p>
+                            <p id="my-portfolio-button" onClick={this.onClickHandler}>Enter</p>
                         </Link>
                     </div>
                 </div>
