@@ -10,6 +10,7 @@ class About extends React.Component {
         return(
             <div id="about-wrapper">
                 <Navbar />
+
             </div>
         )
     }
