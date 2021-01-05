@@ -1,6 +1,7 @@
 #navbar-wrapper {
     position: fixed;
     width: 100vw;
+    height: 4em;
     background-color: black;
     display: inline;
     color: white;
@@ -8,16 +9,30 @@
     transition: .5s;
 }
 
+#menu-button {
+    position: absolute;
+    margin-left: 1em;
+    margin-top: 1em
+}
+
+.menu-line {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+
+
 #navbar-ul {
     list-style-type:none;
     display: flex;
-    font-size: 1.5em;
+    font-size: 1em;
     user-select: none;
     transition: .5s;
 }
 
 .navbar-li {
-    padding: 1rem;
     transition: .5s;
 }
 
@@ -31,3 +46,49 @@
     transition: .5s;
     color: #0a26e9;
 }
+
+
+@media only screen and (min-width: 728px) {
+    #menu-button {
+        display: none;
+    }
+
+
+    #navbar-wrapper {
+        position: fixed;
+        width: 100vw;
+        background-color: black;
+        display: inline;
+        color: white;
+        z-index: 1;
+        transition: .5s;
+    }
+
+    #navbar-ul {
+        list-style-type:none;
+        display: flex;
+        font-size: 1.5em;
+        user-select: none;
+        transition: .5s;
+    }
+
+    .navbar-li {
+        padding: 1rem;
+        transition: .5s;
+    }
+
+    .navbar-li:hover {
+        color: #0a26e9;
+        transition: .5s;
+    }
+
+    .navbar-li-selected {
+        padding: 1rem;
+        transition: .5s;
+        color: #0a26e9;
+    }
+
+}
+
+
+

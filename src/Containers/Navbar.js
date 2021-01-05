@@ -13,6 +13,14 @@ class Navbar extends React.Component {
     render() {
         return(
             <div id="navbar-wrapper">
+
+                <div id="menu-button">
+                    <div className="menu-line"></div>
+                    <div className="menu-line"></div>
+                    <div className="menu-line"></div>
+                </div>
+
+
                 <ul id="navbar-ul">
                     <Link to="home"
                           smooth={true}
