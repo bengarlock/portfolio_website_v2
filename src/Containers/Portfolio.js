@@ -4,15 +4,13 @@ import "../stylesheets/ContainerTemplates.css"
 
 class Portfolio extends React.Component {
 
-
-
     render() {
         return(
             <div id="page-wrapper">
                 <div className="buffer"></div>
                 <div className="page-header">- PORTFOLIO -</div>
                 <div className="content-wrapper">
-                    <ul id='technology'>
+                    <ul id='technology-list'>
                         <li>ALL</li>
                         <li>JAVASCRIPT</li>
                         <li>REACT-JS</li>
