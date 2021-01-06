@@ -2,21 +2,38 @@
     position: relative;
     height: 100vh;
     width: 100vw;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 50px 1fr;
+}
+
+.buffer {
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .page-header {
-    position: absolute;
-    top: 12%;
-    left: 50%;
-    transform: translate(-50%);
-    font-size: 1em;
+    grid-column: 1;
+    grid-row: 2;
+    width: 100vw;
+    text-align: center;
     text-decoration: underline;
     text-underline-position: under;
+}
+
+.content-wrapper {
+    grid-column: 1;
+    grid-row: 3;
+    width: 100vw;
+    background-color: #4e77bc;
 }
 
 
 @media only screen and (min-width: 728px) {
     .page-header {
+
         font-size: 2em;
     }
 }

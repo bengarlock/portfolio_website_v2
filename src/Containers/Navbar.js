@@ -97,8 +97,6 @@ class Navbar extends React.Component {
                 <div id="fullscreen-nav">
                     {this.renderLinks()}
                 </div>
-
-
             </div>
         )
     }

@@ -9,7 +9,11 @@ class About extends React.Component {
     render() {
         return(
             <div id="page-wrapper">
+                <div className="buffer"></div>
                 <div className="page-header">- ABOUT -</div>
+                <div className="content-wrapper">
+
+                </div>
             </div>
         )
     }

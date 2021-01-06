@@ -1,13 +1,16 @@
 #navbar-wrapper {
-    position: fixed;
     width: 100vw;
     height: 4em;
-    background-color: black;
-    display: inline;
+
     color: white;
-    z-index: 1;
     transition: .5s;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 2;
 }
+
+
 
 #menu-button {
     position: absolute;
@@ -55,7 +58,6 @@
 .navbar-li {
     display: flex;
     padding: 1rem;
-    transform: translate(-20%);
     transition: .5s;
 }
 
@@ -68,7 +70,6 @@
     display: flex;
     padding: 1rem;
     transition: .5s;
-    transform: translate(-20%);
     color: #0a26e9;
 }
 
