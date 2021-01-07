@@ -38,7 +38,7 @@ class Navbar extends React.Component {
                         id="home"
                         onClick={this.onClickHandler}>HOME</li>
                 </Link>
-                <Link to="about"
+                <Link to="buffer"
                       smooth={true}
                       spy={true}
                       duration={500}>

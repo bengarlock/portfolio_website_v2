@@ -1,24 +1,13 @@
 #page-wrapper {
-    grid-row: 3;
-    position: relative;
     height: 100vh;
     width: 100vw;
-    display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 80px 50px 1fr;
-}
-
-.buffer {
-    grid-column: 1;
-    grid-row: 1;
 }
 
 .page-header {
-    grid-column: 1;
-    grid-row: 2;
     width: 100vw;
+    font-size: 40px;
     text-align: center;
     text-decoration: underline;
     text-underline-position: under;
@@ -27,7 +16,11 @@
 
 @media only screen and (min-width: 728px) {
     .page-header {
-
-        font-size: 2em;
+        padding-top: 1em;
+        width: 100vw;
+        font-size: 40px;
+        text-align: center;
+        text-decoration: underline;
+        text-underline-position: under;
     }
 }

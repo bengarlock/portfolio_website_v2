@@ -40,15 +40,15 @@ class App extends React.Component {
                 <Element name="about">
                     <About changePage={this.changePage} />
                 </Element>
-                <Element name="portfolio">
-                    <Portfolio changePage={this.changePage} />
-                </Element>
-                <Element name="blog">
-                    <Blog changePage={this.changePage} />
-                </Element>
-                <Element name="contact">
-                    <Contact changePage={this.changePage} />
-                </Element>
+                {/*<Element name="portfolio">*/}
+                {/*    <Portfolio changePage={this.changePage} />*/}
+                {/*</Element>*/}
+                {/*<Element name="blog">*/}
+                {/*    <Blog changePage={this.changePage} />*/}
+                {/*</Element>*/}
+                {/*<Element name="contact">*/}
+                {/*    <Contact changePage={this.changePage} />*/}
+                {/*</Element>*/}
             </div>
         );
     }
