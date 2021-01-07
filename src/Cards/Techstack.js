@@ -1,7 +1,23 @@
 import React from 'react'
 import "../stylesheets/Techstack.css"
+import ReactTimeout from 'react-timeout'
+
 
 class Techstack extends React.Component {
+
+    state = {
+        boxes: '',
+        intervalId: '',
+    }
+
+    componentDidMount = () => {
+        let intervalId = setInterval(this.timer, 1000);
+
+        this.setState({
+            boxes: document.getElementsByClassName("tech-bubble"),
+            intervalId: intervalId
+        })
+    }
 
     randomColor = () => {
         const colors = [
@@ -21,14 +37,25 @@ class Techstack extends React.Component {
         return colors[number]
     }
 
+
+    hoverBackground = () => {
+        const boxes = [...this.state.boxes]
+        boxes.map(box => box.style.backgroundColor = this.randomColor())
+        this.setState({
+            boxes: boxes
+        })
+    }
+
+
     render() {
         return(
-            <div className="tech-bubble"
+            <div className="tech-bubble" onMouseOver={this.hoverBackground}
                  style={{
                      backgroundColor: this.randomColor()
                  }}
             >
                 {this.props.technology.name}
+                {this.timeOut()}
             </div>
         )
     }

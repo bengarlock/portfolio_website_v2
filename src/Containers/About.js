@@ -33,15 +33,15 @@ class About extends React.Component {
                 name: "SQL",
             },
             {
-                id: 6,
+                id: 7,
                 name: "HTML5",
             },
             {
-                id: 6,
+                id: 8,
                 name: "CSS",
             },
             {
-                id: 6,
+                id: 9,
                 name: "API",
             },
         ]
@@ -67,23 +67,23 @@ class About extends React.Component {
                 <div id="profile-wrapper">
                     <div id="profile-image-wrapper">
                         <img className="profile-photo" src={profile_photo} alt="profile_photo" />
-                        <p style={{fontSize: "2em", textAlign:"center"}}>
+                        <div style={{fontSize: "2em", textAlign:"center"}}>
                             A little about me...
-                        </p>
-                        <p>
+                        </div>
+                        <div>
                             <br />
-                            <p>
+                            <div>
                                 I'm a full stack developer based out of New York.  I have sixteen years of
                                 experience working in the Technology Industry, most notably with &nbsp;
                                 <a href="https://www.opentable.com" target="_blank">OpenTable. </a>
-                            </p>
+                            </div>
 
-                            <p>
+                            <div>
                                 I believe in writing clean and efficient code that can scale. I also understand the need
                                 to deliver features to market quickly. If you'd like to have a conversation, please feel
                                 free to contact me.
-                            </p>
-                        </p>
+                            </div>
+                        </div>
                     </div>
                     <div id="tech-stack">
                         {this.renderTechnologies()}
