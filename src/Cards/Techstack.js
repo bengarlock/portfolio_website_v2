@@ -18,7 +18,6 @@ class Techstack extends React.Component {
         const min = 0
         const max = Math.floor(colors.length)
         const number = Math.floor(Math.random() * (max - min) + min);
-        console.log(number)
         return colors[number]
     }
 
