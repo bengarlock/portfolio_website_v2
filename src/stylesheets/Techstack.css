@@ -2,13 +2,21 @@
     color: white;
     text-align: center;
     user-select: none;
+    padding: 1em;
+}
 
+.tech-bubble:hover {
+    background-color: #628dff;
+    transition: .5s;
 }
 
 @media only screen and (min-width: 728px) {
     .tech-bubble {
-        width: 12em;
-        height: 12em;
-        margin: 20px;
+        width: 8em;
+        height: 8em;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

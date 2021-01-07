@@ -30,18 +30,20 @@
 
 #technology.header-box {
     background-image: url("../media/technology.jpg");
-
     order: 1;
 }
 
 #experience.header-box {
     background-image: url("../media/experience.jpg");
+    order: 2;
 }
 #innovation.header-box {
     background-image: url("../media/inovation.jpg");
+    order: 3;
 }
 #reliability.header-box {
     background-image: url("../media/reliability.jpg");
+    order: 4;
 }
 
 #profile-wrapper {
@@ -71,11 +73,14 @@
 }
 
 #tech-stack {
+    margin-top: 20px;
     flex: 2;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
+
 
 @media only screen and (min-width: 728px) {
     .content-wrapper-about {
@@ -102,12 +107,13 @@
     }
 
     #tech-stack {
-        padding: 20px;
         flex: 2;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         font-size: 12pt;
+        justify-content: space-between;
+        margin-right: 2em;
     }
 
 }

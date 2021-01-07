@@ -11,27 +11,38 @@ class About extends React.Component {
             {
                 id: 1,
                 name: "PYTHON",
-                size: "15vw"
             },
             {
                 id: 2,
                 name: "RUBY/RAILS",
-                size: "10vw"
             },
             {
                 id: 3,
                 name: "JAVASCRIPT",
-                size: "20vw"
             },
             {
                 id: 4,
                 name: "DJANGO",
-                size: "15vw"
             },
             {
                 id: 5,
                 name: "REACT",
-                size: "30vw"
+            },
+            {
+                id: 6,
+                name: "SQL",
+            },
+            {
+                id: 6,
+                name: "HTML5",
+            },
+            {
+                id: 6,
+                name: "CSS",
+            },
+            {
+                id: 6,
+                name: "API",
             },
         ]
     }
@@ -77,10 +88,6 @@ class About extends React.Component {
                     <div id="tech-stack">
                         {this.renderTechnologies()}
                     </div>
-
-
-
-
 
                 </div>
 
