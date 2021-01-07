@@ -9,6 +9,15 @@ body {
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0a26e9;
+    transition: .5s;
+}
+
 #app-wrapper {
     position: absolute;
     width: 100%;

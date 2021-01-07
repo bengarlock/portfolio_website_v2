@@ -23,20 +23,26 @@ class About extends React.Component {
                 <div id="profile-wrapper">
                     <div id="profile-image-wrapper">
                         <img className="profile-photo" src={profile_photo} alt="profile_photo" />
-                    </div>
-                    <div id="about-text">
-                        <p style={{fontSize: "2em"}}>
+                        <p style={{fontSize: "2em", textAlign:"center"}}>
                             A little about me...
                         </p>
                         <p>
                             <br />
-                            <p>I'm a full stack developer based out of New York.  I have sixteen years of
-                            experience working in the Technology Industry, most notably with &nbsp;
-                                <a href="https://www.opentable.com" target="_blank">OpenTable. </a> &nbsp; I've spent
-                                a good deal of time working with restaurant hospitality groups like NOHO, Momofuku,
-                                and many others.
+                            <p>
+                                I'm a full stack developer based out of New York.  I have sixteen years of
+                                experience working in the Technology Industry, most notably with &nbsp;
+                                <a href="https://www.opentable.com" target="_blank">OpenTable. </a>
+                            </p>
+
+                            <p>
+                                I believe in writing clean and efficient code that can scale. I also understand the need
+                                to deliver features to market quickly. If you'd like to have a conversation, please feel
+                                free to contact me.
                             </p>
                         </p>
+                    </div>
+                    <div id="tech-stack">
+
                     </div>
 
 

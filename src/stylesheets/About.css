@@ -40,7 +40,6 @@
 #innovation.header-box {
     background-image: url("../media/inovation.jpg");
 }
-
 #reliability.header-box {
     background-image: url("../media/reliability.jpg");
 }
@@ -48,29 +47,28 @@
 #profile-wrapper {
     display: flex;
     flex-direction: column;
+    font-size: 12pt;
 }
 
 #profile-image-wrapper {
     flex: 1;
-    order: 2;
-    flex-basis: 10%;
+    text-align: center;
 }
 
 .profile-photo {
-    position: relative;
-    left: 50%;
-    transform: translate(calc(-50% - 20px));
+    margin-top: 20px;
     width: 10em;
     height: 10em;
-    margin: 20px;
     border-radius: 50%;
 }
 
-#about-text {
-    text-align: center;
+#profile-image-wrapper p {
+    text-align: left;
     flex: 1;
     order: 2;
-    padding: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
+
 }
 
 @media only screen and (min-width: 728px) {
@@ -81,21 +79,6 @@
     .header-box {
         height: 6em;
         font-size: 1.5em;
-    }
-
-    #technology.header-box {
-
-    }
-
-    #experience.header-box {
-        flex: 1;
-    }
-    #innovation.header-box {
-
-    }
-
-    #reliability.header-box {
-
     }
 
     #profile-wrapper {
@@ -112,13 +95,8 @@
         height: 15em;
     }
 
-    #about-text {
-        text-align: left;
+    #tech-stack {
         flex: 1;
-        padding: 3em;
-        right: 30px;
-        background-color: green;
-
     }
 
 }
