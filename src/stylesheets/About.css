@@ -16,7 +16,7 @@
     transition: .5s;
     outline: none;
     flex: 1;
-    min-width: 200px;
+    min-width: 181px;
     background-position: 40%;
     background-size: cover;
     border-right: none;
@@ -96,7 +96,7 @@
     }
 
     #tech-stack {
-        flex: 1;
+        flex: 2;
     }
 
 }

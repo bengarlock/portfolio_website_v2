@@ -46,7 +46,7 @@ iframe.home-iframe {
 }
 
 #full-name {
-    color: #d81e6a;
+    color: #f6066a;
 }
 
 #my-portfolio-button {
@@ -72,8 +72,6 @@ iframe.home-iframe {
         width: 35em;
         height: 35em;
     }
-
-
 
     #hello-text {
         font-size: 4em;

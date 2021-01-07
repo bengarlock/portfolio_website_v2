@@ -2,9 +2,33 @@ import React from "react"
 import "../stylesheets/About.css"
 import "../stylesheets/ContainerTemplates.css"
 import profile_photo from "../media/profile_photo.jpg"
+import Techstack from "../Cards/Techstack";
 
 class About extends React.Component {
 
+    state = {
+        technologies: [
+            {
+                id: 1,
+                name: "PYTHON",
+                projects: 100
+            },
+            {
+                id: 2,
+                name: "RUBY/RAILS",
+                projects: 3
+            },
+            {
+                id: 3,
+                name: "JAVASCRIPT",
+                projects: 6
+            },
+        ]
+    }
+
+    renderTechnologies = () => {
+        return this.state.technologies.map(technology => <Techstack key={technology.id} technology={technology}/>)
+    }
 
 
     render() {
@@ -42,7 +66,7 @@ class About extends React.Component {
                         </p>
                     </div>
                     <div id="tech-stack">
-
+                        {this.renderTechnologies()}
                     </div>
 
 
