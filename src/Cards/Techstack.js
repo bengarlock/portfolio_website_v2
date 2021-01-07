@@ -5,15 +5,20 @@ class Techstack extends React.Component {
 
     randomColor = () => {
         const colors = [
-            "#7c1818",
-            "#0e2f99",
-            "#5962ae",
-            "#d0cb7a",
-            "#8cca13",
+            "#003f5f", "#4961b3",
+            "#71749f", "#1c267a",
+            "#53a2ca", "#6e7de2",
+            "#19075f", "#294983",
+            "#4f34a5", "#2e385d",
+            "#075075", "#49518d",
+            "#00a6ff", "#2a359b",
+            "#125456", "#40355b",
         ]
+
         const min = 0
         const max = Math.floor(colors.length)
         const number = Math.floor(Math.random() * (max - min) + min);
+        console.log(number)
         return colors[number]
     }
 
@@ -21,9 +26,6 @@ class Techstack extends React.Component {
         return(
             <div className="tech-bubble"
                  style={{
-                     height: this.props.technology.project,
-                     width: this.props.technology.projects,
-                     padding: this.props.technology.projects,
                      backgroundColor: this.randomColor()
                  }}
             >

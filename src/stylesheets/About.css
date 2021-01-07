@@ -68,7 +68,13 @@
     order: 2;
     margin-left: 10px;
     margin-right: 10px;
+}
 
+#tech-stack {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 @media only screen and (min-width: 728px) {
@@ -96,7 +102,12 @@
     }
 
     #tech-stack {
+        padding: 20px;
         flex: 2;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 12pt;
     }
 
 }

@@ -11,17 +11,27 @@ class About extends React.Component {
             {
                 id: 1,
                 name: "PYTHON",
-                projects: 100
+                size: "15vw"
             },
             {
                 id: 2,
                 name: "RUBY/RAILS",
-                projects: 3
+                size: "10vw"
             },
             {
                 id: 3,
                 name: "JAVASCRIPT",
-                projects: 6
+                size: "20vw"
+            },
+            {
+                id: 4,
+                name: "DJANGO",
+                size: "15vw"
+            },
+            {
+                id: 5,
+                name: "REACT",
+                size: "30vw"
             },
         ]
     }
@@ -29,7 +39,6 @@ class About extends React.Component {
     renderTechnologies = () => {
         return this.state.technologies.map(technology => <Techstack key={technology.id} technology={technology}/>)
     }
-
 
     render() {
         return(

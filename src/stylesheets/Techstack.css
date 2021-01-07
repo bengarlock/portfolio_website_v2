@@ -1,5 +1,16 @@
 .tech-bubble {
-    border-radius: 50%;
     color: white;
     text-align: center;
+    user-select: none;
+
+}
+
+@media only screen and (min-width: 728px) {
+    .tech-bubble {
+        width: 12em;
+        height: 12em;
+        margin: 20px;
+    }
+
+
 }
