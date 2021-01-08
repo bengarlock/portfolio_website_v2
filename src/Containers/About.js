@@ -79,8 +79,9 @@ class About extends React.Component {
                             <div>
                                 I'm a full stack developer based out of New York.  I have sixteen years of
                                 experience working in the Technology Industry, most notably with &nbsp;
-                                <a href="https://www.opentable.com" target="_blank">OpenTable. </a>
+                                <a href="https://www.opentable.com" target="_blank" rel="noreferrer">OpenTable. </a>
                             </div>
+                            <br />
 
                             <div>
                                 I believe in writing clean and efficient code that can scale. I also understand the need
