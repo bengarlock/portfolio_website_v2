@@ -7,15 +7,11 @@ class Techstack extends React.Component {
 
     state = {
         boxes: '',
-        intervalId: '',
     }
 
     componentDidMount = () => {
-        let intervalId = setInterval(this.timer, 1000);
-
         this.setState({
             boxes: document.getElementsByClassName("tech-bubble"),
-            intervalId: intervalId
         })
     }
 
@@ -41,9 +37,7 @@ class Techstack extends React.Component {
     hoverBackground = () => {
         const boxes = [...this.state.boxes]
         boxes.map(box => box.style.backgroundColor = this.randomColor())
-        this.setState({
-            boxes: boxes
-        })
+
     }
 
 
@@ -55,7 +49,6 @@ class Techstack extends React.Component {
                  }}
             >
                 {this.props.technology.name}
-                {this.timeOut()}
             </div>
         )
     }
