@@ -34,9 +34,17 @@ class Techstack extends React.Component {
     }
 
 
-    hoverBackground = () => {
+    hoverBackground = (e) => {
         const boxes = [...this.state.boxes]
-        boxes.map(box => box.style.backgroundColor = this.randomColor())
+        boxes.map(box => {
+            let newColor = this.randomColor()
+            if (newColor !== box.style.backgroundColor) {
+                box.style.backgroundColor = newColor
+            } else {
+                this.hoverBackground(e)
+            }
+        })
+        e.target.style.backgroundColor = this.randomColor()
 
     }
 
