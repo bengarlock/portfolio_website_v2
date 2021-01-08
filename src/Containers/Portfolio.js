@@ -80,8 +80,6 @@ class Portfolio extends React.Component {
                         <div id="project-grid-wrapper">
                             {this.renderProjects()}
                         </div>
-
-
                     </div>
 
 
