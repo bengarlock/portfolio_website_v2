@@ -4,6 +4,7 @@
     user-select: none;
     padding: 1em;
     transition: 5s;
+    flex: 1;
 }
 
 .tech-bubble:hover {
