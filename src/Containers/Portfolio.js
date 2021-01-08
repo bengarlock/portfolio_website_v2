@@ -2,6 +2,7 @@ import React from 'react'
 import "../stylesheets/Portfolio.css"
 import "../stylesheets/ContainerTemplates.css"
 import Iframe from "../Tools/Iframe";
+import Project from "../Cards/Project";
 
 class Portfolio extends React.Component {
 
@@ -11,7 +12,7 @@ class Portfolio extends React.Component {
             {
                 id: 1,
                 name: "Star Iron",
-                tech: ["javascript", "rails"]
+                tech: ["javascript", "ruby-rails"]
             },
             {
                 id: 2,
@@ -21,7 +22,27 @@ class Portfolio extends React.Component {
             {
                 id: 3,
                 name: "Table Host",
-                tech: ["react", "rails", "django"]
+                tech: ["react-js", "rails", "django"]
+            },
+            {
+                id: 4,
+                name: "Flatiron Furniture",
+                tech: ["react-js", "ruby-rails"]
+            },
+            {
+                id: 5,
+                name: "Table Host",
+                tech: ["react-js", "ruby-rails", "rails", "django"]
+            },
+            {
+                id: 6,
+                name: "Online Booking",
+                tech: ["react-js"]
+            },
+            {
+                id: 7,
+                name: "ToDo Task Manager",
+                tech: ["javascript"]
             },
         ]
     }
@@ -33,7 +54,13 @@ class Portfolio extends React.Component {
     }
 
     renderProjects = () => {
-        return null
+        if (this.state.current_tech === "all") {
+            return this.state.projects.map(project => <Project key={project.id} project={project} />)
+        } else {
+            const projects = [...this.state.projects]
+            const selectedProjects = projects.filter(project => project.tech.includes(this.state.current_tech))
+            return selectedProjects.map(project => <Project key={project.id} project={project} />)
+        }
     }
 
     onClickHandler = (e) => {
@@ -44,6 +71,7 @@ class Portfolio extends React.Component {
 
 
     render() {
+        console.log(this.state.current_tech)
         return(
             <div id="page-wrapper">
                 <div className="buffer"></div>
@@ -81,9 +109,6 @@ class Portfolio extends React.Component {
                             {this.renderProjects()}
                         </div>
                     </div>
-
-
-
 
 
                     {/*<div className="project-wrapper" id="fluffy-tail">FLUFFY TAIL</div>*/}

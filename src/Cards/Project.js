@@ -5,7 +5,7 @@ class Project extends React.Component {
 
     render() {
         return(
-            <div className="project-object">project</div>
+            <div className="project-object">{this.props.project.name}</div>
         )
     }
 }
