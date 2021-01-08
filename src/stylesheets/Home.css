@@ -11,6 +11,7 @@ iframe.home-iframe {
     border: 0;
     width: 100vw;
     height: 100vh;
+    z-index: -1;
 }
 
 
@@ -27,8 +28,6 @@ iframe.home-iframe {
     border-radius: 50%;
     overflow: hidden;
 }
-
-
 
 #hello-text {
     position: relative;

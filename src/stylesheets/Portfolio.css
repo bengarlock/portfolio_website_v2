@@ -16,6 +16,7 @@
     padding: 1em;
     transition: .5s;
     flex:1;
+    background-color: #bbc2ea;
 }
 
 .navbar-tech:hover {
@@ -32,7 +33,31 @@
 }
 
 #project-wrapper {
-    background-color: #5c87f5;
-    height: 100vh;
+    width: 100vw;
     border: 1px black;
+}
+
+iframe {
+    position: absolute;
+    z-index: -1;
+}
+
+#project-grid-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    overflow: hidden;
+}
+
+.project-object {
+    margin: 2em;
+    padding: 5em;
+    background-color: #c3dbff;
+}
+
+.buffer-transparent {
+    background-color: #000000;
+    height: 20px;
 }

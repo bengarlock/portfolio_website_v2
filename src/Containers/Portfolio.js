@@ -6,7 +6,24 @@ import Iframe from "../Tools/Iframe";
 class Portfolio extends React.Component {
 
     state = {
-        current_tech: ''
+        current_tech: '',
+        projects: [
+            {
+                id: 1,
+                name: "Star Iron",
+                tech: ["javascript", "rails"]
+            },
+            {
+                id: 2,
+                name: "Fluffy Tail",
+                tech: ["rails"]
+            },
+            {
+                id: 3,
+                name: "Table Host",
+                tech: ["react", "rails", "django"]
+            },
+        ]
     }
 
     componentDidMount() {
@@ -24,7 +41,6 @@ class Portfolio extends React.Component {
             current_tech: e.target.id
         })
     }
-
 
 
     render() {
@@ -60,14 +76,18 @@ class Portfolio extends React.Component {
                         </li>
                     </ul>
                     <div id="project-wrapper">
-                        <Iframe title="color_grid" source={"https://www.bengarlock.com:6325/"} />
-                        {this.renderProjects()}
+                        <Iframe id="portfolio-iframe" title="color_grid" source={"https://www.bengarlock.com:6325/"} />
+                        <div id="project-grid-wrapper">
+                            {this.renderProjects()}
+                        </div>
+
+
                     </div>
 
 
 
 
-                    {/*<div className="project-wrapper" id="star-iron">STAR IRON</div>*/}
+
                     {/*<div className="project-wrapper" id="fluffy-tail">FLUFFY TAIL</div>*/}
                     {/*<div className="project-wrapper" id="flatiron-furniture">FLATIRON FURNITURE</div>*/}
                     {/*<div className="project-wrapper" id="table-host">TABLE HOST</div>*/}

@@ -47,6 +47,14 @@ class About extends React.Component {
             {
                 id: 10,
                 name: "REDUX",
+            },
+            {
+                id: 11,
+                name: "GIT",
+            },
+            {
+                id: 12,
+                name: "APACHE",
             }
         ]
     }
