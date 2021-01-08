@@ -1,12 +1,14 @@
 import React from 'react'
 import "../stylesheets/Techstack.css"
-import ReactTimeout from 'react-timeout'
+import Heartbeat from 'react-heartbeat';
+
 
 
 class Techstack extends React.Component {
 
     state = {
         boxes: '',
+        e: ""
     }
 
     componentDidMount = () => {
@@ -34,28 +36,20 @@ class Techstack extends React.Component {
     }
 
 
-    hoverBackground = (e) => {
+    hoverBackground = () => {
         const boxes = [...this.state.boxes]
-        boxes.map(box => {
-            let newColor = this.randomColor()
-            if (newColor !== box.style.backgroundColor) {
-                box.style.backgroundColor = newColor
-            } else {
-                this.hoverBackground(e)
-            }
-        })
-        e.target.style.backgroundColor = this.randomColor()
-
+        boxes.map(box => box.style.backgroundColor = this.randomColor())
     }
-
 
     render() {
         return(
-            <div className="tech-bubble" onMouseOver={this.hoverBackground}
+
+            <div className="tech-bubble"
                  style={{
                      backgroundColor: this.randomColor()
                  }}
             >
+                <Heartbeat heartbeatFunction={this.hoverBackground} heartbeatInterval={3000} />
                 {this.props.technology.name}
             </div>
         )

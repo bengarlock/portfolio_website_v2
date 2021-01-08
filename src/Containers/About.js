@@ -44,6 +44,10 @@ class About extends React.Component {
                 id: 9,
                 name: "API",
             },
+            {
+                id: 10,
+                name: "REDUX",
+            }
         ]
     }
 
