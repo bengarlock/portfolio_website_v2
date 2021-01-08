@@ -14,8 +14,9 @@
 
 @media only screen and (min-width: 728px) {
     .tech-bubble {
-        width: 8em;
-        height: 8em;
+        /*width: 8em;*/
+        /*height: 8em;*/
+        max-height: 3em;
         margin: 20px;
         display: flex;
         justify-content: center;

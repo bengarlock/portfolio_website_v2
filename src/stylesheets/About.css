@@ -82,6 +82,9 @@
     align-items: stretch;
     width: 100%;
 }
+.about-text-box {
+    margin: 2em;
+}
 
 
 @media only screen and (min-width: 728px) {
@@ -114,8 +117,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         font-size: 12pt;
-        justify-content: space-between;
-        margin-right: 3em;
+        justify-content: stretch;
+        margin: 3em;
     }
 
 }

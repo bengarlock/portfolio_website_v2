@@ -74,7 +74,7 @@ class About extends React.Component {
                         <div style={{fontSize: "2em", textAlign:"center"}}>
                             A little about me...
                         </div>
-                        <div>
+                        <div className="about-text-box">
                             <br />
                             <div>
                                 I'm a full stack developer based out of New York.  I have sixteen years of

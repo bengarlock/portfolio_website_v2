@@ -1,6 +1,7 @@
 import React from 'react'
 import "../stylesheets/Portfolio.css"
 import "../stylesheets/ContainerTemplates.css"
+import Iframe from "../Tools/Iframe";
 
 class Portfolio extends React.Component {
 
@@ -23,6 +24,8 @@ class Portfolio extends React.Component {
             current_tech: e.target.id
         })
     }
+
+
 
     render() {
         return(
@@ -57,6 +60,7 @@ class Portfolio extends React.Component {
                         </li>
                     </ul>
                     <div id="project-wrapper">
+                        <Iframe title="color_grid" source={"https://www.bengarlock.com:6325/"} />
                         {this.renderProjects()}
                     </div>
 
