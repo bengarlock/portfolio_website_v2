@@ -5,7 +5,14 @@ class Project extends React.Component {
 
     render() {
         return(
-            <div className="project-object">{this.props.project.name}</div>
+            <div className='project-wrapper'>
+                <a href={this.props.project.link} target="_blank" ref={this.props.project.name}>
+                    <div className="project-object"  style={{backgroundImage: `url(${this.props.project.bg_image})`}}>
+                        {this.props.project.name}
+                    </div>
+                </a>
+            </div>
+
         )
     }
 }

@@ -1,8 +1,16 @@
 import React from 'react'
 import "../stylesheets/Portfolio.css"
 import "../stylesheets/ContainerTemplates.css"
+import tablehost from "../media/tablehost.jpg"
+import stariron from "../media/stariron.jpg"
+import fluffytail from "../media/fluffytail.jpg"
+import flatironfurniture from "../media/flatironfurniture.jpg"
+import onlinebooking from "../media/onlinebooking.jpg"
+
+
 import Iframe from "../Tools/Iframe";
 import Project from "../Cards/Project";
+
 
 class Portfolio extends React.Component {
 
@@ -11,38 +19,45 @@ class Portfolio extends React.Component {
         projects: [
             {
                 id: 1,
-                name: "Star Iron",
-                tech: ["javascript", "ruby-rails"]
+                name: "Table Host",
+                tech: ["react-js", "rails", "django"],
+                link: "https://www.bengarlock.com:6320/",
+                bg_image: tablehost
             },
             {
                 id: 2,
-                name: "Fluffy Tail",
-                tech: ["rails"]
+                name: "Star Iron",
+                tech: ["javascript", "ruby-rails"],
+                link: "https://mysterious-mountain-50790.herokuapp.com/",
+                bg_image: stariron
             },
             {
                 id: 3,
-                name: "Table Host",
-                tech: ["react-js", "rails", "django"]
+                name: "Fluffy Tail",
+                tech: ["rails"],
+                link: "https://fluffy-tail.herokuapp.com/",
+                bg_image: fluffytail
             },
             {
                 id: 4,
                 name: "Flatiron Furniture",
-                tech: ["react-js", "ruby-rails"]
+                tech: ["react-js", "ruby-rails"],
+                link: "https://pure-forest-57453.herokuapp.com/",
+                bg_image: flatironfurniture
             },
             {
                 id: 5,
-                name: "Table Host",
-                tech: ["react-js", "ruby-rails", "rails", "django"]
+                name: "Online Booking",
+                tech: ["react-js"],
+                link: "https://www.bengarlock.com:6321/",
+                bg_image: onlinebooking
             },
             {
                 id: 6,
-                name: "Online Booking",
-                tech: ["react-js"]
-            },
-            {
-                id: 7,
                 name: "ToDo Task Manager",
-                tech: ["javascript"]
+                tech: ["javascript"],
+                link: "https://www.bengarlock.com:6322/",
+                bg_image: ''
             },
         ]
     }
@@ -109,13 +124,6 @@ class Portfolio extends React.Component {
                             {this.renderProjects()}
                         </div>
                     </div>
-
-
-                    {/*<div className="project-wrapper" id="fluffy-tail">FLUFFY TAIL</div>*/}
-                    {/*<div className="project-wrapper" id="flatiron-furniture">FLATIRON FURNITURE</div>*/}
-                    {/*<div className="project-wrapper" id="table-host">TABLE HOST</div>*/}
-                    {/*<div className="project-wrapper" id="online-booking">ONLINE BOOKING</div>*/}
-                    {/*<div className="project-wrapper" id="todo-task-manager">TASK MANAGER</div>*/}
                 </div>
             </div>
         )
