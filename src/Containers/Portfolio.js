@@ -6,6 +6,7 @@ import stariron from "../media/stariron.jpg"
 import fluffytail from "../media/fluffytail.jpg"
 import flatironfurniture from "../media/flatironfurniture.jpg"
 import onlinebooking from "../media/onlinebooking.jpg"
+import todo from '../media/todo.jpg'
 
 
 import Iframe from "../Tools/Iframe";
@@ -57,7 +58,7 @@ class Portfolio extends React.Component {
                 name: "ToDo Task Manager",
                 tech: ["javascript"],
                 link: "https://www.bengarlock.com:6322/",
-                bg_image: ''
+                bg_image: todo
             },
         ]
     }
