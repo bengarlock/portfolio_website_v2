@@ -6,7 +6,7 @@ import Portfolio from "./Containers/Portfolio";
 
 import { Element } from 'react-scroll'
 import Navbar from "./Containers/Navbar";
-// import Blog from "./Containers/Blog";
+import Blog from "./Containers/Blog";
 // import Contact from "./Containers/Contact";
 
 
@@ -43,9 +43,9 @@ class App extends React.Component {
                 <Element name="portfolio">
                     <Portfolio changePage={this.changePage} />
                 </Element>
-                {/*<Element name="blog">*/}
-                {/*    <Blog changePage={this.changePage} />*/}
-                {/*</Element>*/}
+                <Element name="blog">
+                    <Blog changePage={this.changePage} />
+                </Element>
                 {/*<Element name="contact">*/}
                 {/*    <Contact changePage={this.changePage} />*/}
                 {/*</Element>*/}

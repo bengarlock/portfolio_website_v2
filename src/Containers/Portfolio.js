@@ -87,7 +87,6 @@ class Portfolio extends React.Component {
 
 
     render() {
-        console.log(this.state.current_tech)
         return(
             <div id="page-wrapper">
                 <div className="buffer"></div>
@@ -120,7 +119,7 @@ class Portfolio extends React.Component {
                         </li>
                     </ul>
                     <div id="project-wrapper">
-                        <Iframe id="portfolio-iframe" title="color_grid" source={"https://www.bengarlock.com:6325/"} />
+                        {/*<Iframe className="portfolio-iframe" title="color_grid" source={"https://www.bengarlock.com:6325/"} />*/}
                         <div id="project-grid-wrapper">
                             {this.renderProjects()}
                         </div>
