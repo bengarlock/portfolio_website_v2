@@ -1,6 +1,5 @@
 .content-wrapper-blog {
     width: 100vw;
-    height: 55vh;
     background-color: #6376b7;
     display: flex;
     justify-content: center;
@@ -9,8 +8,6 @@
 #article-wrapper {
     justify-content: center;
     display: flex;
-    background-color: red;
-    width: 75vw;
-    /*height: 55vh;*/
+    width: 85vw;
     flex-wrap: wrap;
 }

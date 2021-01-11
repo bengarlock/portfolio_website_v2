@@ -8,8 +8,8 @@ class Article extends React.Component {
             <div>
                 <a href={this.props.article.url}
                    target="_blank"
-                   rel={this.props.article.title} >
-                    <div className="article">
+                   rel={this.props.article.title}>
+                    <div className="article"  style={{backgroundImage: `url(${this.props.article.bg_image})`}}>
                         {this.props.article.title}
                     </div>
                 </a>
