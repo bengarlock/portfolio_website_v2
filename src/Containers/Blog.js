@@ -16,7 +16,7 @@ class Blog extends React.Component {
             {
                 id: 2,
                 title: "Rails to Django",
-                url: '',
+                url: 'https://ben-garlock.medium.com/rails-to-django-c0748582c22f',
 
             },
             {
