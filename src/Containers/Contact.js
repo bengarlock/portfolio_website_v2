@@ -3,7 +3,7 @@ import "../stylesheets/Contact.css"
 import "../stylesheets/ContainerTemplates.css"
 import emailjs from 'emailjs-com';
 import { Link } from 'react-scroll'
-
+import ScrollTrigger from "react-scroll-trigger";
 
 
 class Contact extends React.Component {
@@ -40,6 +40,15 @@ class Contact extends React.Component {
         }
     }
 
+    changePageEnter = () => {
+        this.props.changePage("contact")
+    }
+
+    changePageExit = () => {
+        this.props.changePage("blog")
+    }
+
+
     onSubmitHandler = (e) => {
         e.preventDefault();
         emailjs.sendForm(
@@ -59,8 +68,10 @@ class Contact extends React.Component {
     render() {
         return(
             <div id="page-wrapper">
+                <ScrollTrigger onEnter={this.changePageEnter}>
                 <div className="buffer"></div>
                 <div className="page-header">- CONTACT -</div>
+
                 <div className="content-wrapper-contact">
                     <div className="form-wrapper">
                         <p>Have a question or want to work together?</p>
@@ -101,12 +112,12 @@ class Contact extends React.Component {
                             <input id='submit' name='submit' type='submit' value="Submit" />
                         </form>
                     </div>
-
-                    <div className="return-home-wrapper">
-                        <Link to="home" smooth={true} spy={true} duration={500}>
+                    <Link to="home" smooth={true} spy={true} duration={500}>
+                        <div className="return-home-wrapper">
                             <div id="return-home"></div>
-                        </Link>
-                    </div>
+                        </div>
+                    </Link>
+
 
                     <div className="footer-wrapper">
                         <div className="footer-link">
@@ -123,10 +134,7 @@ class Contact extends React.Component {
                     </div>
 
                 </div>
-
-
-
-
+                </ScrollTrigger>
             </div>
         )
     }

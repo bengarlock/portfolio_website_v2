@@ -9,7 +9,7 @@ import image4 from "../media/image4.jpg"
 import image5 from "../media/image5.jpg"
 import image6 from "../media/image6.jpg"
 import image7 from "../media/image7.jpg"
-
+import ScrollTrigger from "react-scroll-trigger";
 
 class Blog extends React.Component {
 
@@ -70,14 +70,13 @@ class Blog extends React.Component {
     render() {
         return(
             <div id="page-wrapper">
-                <div className="buffer"></div>
-                <div className="page-header">- BLOG -</div>
-                <div className="content-wrapper-blog">
-                    <div id="article-wrapper">
-                        {this.renderAricles()}
+                    <div className="buffer"></div>
+                    <div className="page-header">- BLOG -</div>
+                    <div className="content-wrapper-blog">
+                        <div id="article-wrapper">
+                            {this.renderAricles()}
+                        </div>
                     </div>
-
-                </div>
             </div>
         )
     }

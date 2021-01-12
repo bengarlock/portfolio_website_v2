@@ -7,10 +7,9 @@ import fluffytail from "../media/fluffytail.jpg"
 import flatironfurniture from "../media/flatironfurniture.jpg"
 import onlinebooking from "../media/onlinebooking.jpg"
 import todo from '../media/todo.jpg'
-
-
-import Iframe from "../Tools/Iframe";
 import Project from "../Cards/Project";
+import ScrollTrigger from "react-scroll-trigger";
+
 
 
 class Portfolio extends React.Component {
@@ -84,7 +83,6 @@ class Portfolio extends React.Component {
             current_tech: e.target.id
         })
     }
-
 
     render() {
         return(
