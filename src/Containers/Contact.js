@@ -102,14 +102,11 @@ class Contact extends React.Component {
                         </form>
                     </div>
 
-                    <Link to="home"
-                          smooth={true}
-                          spy={true}
-                          duration={500}>
-                        <div className={this.props.currentPage === "home" ? "navbar-li-selected" : 'navbar-li'}
-                             id="home"
-                             onClick={this.onClickHandler}>HOME</div>
-                    </Link>
+                    <div className="return-home-wrapper">
+                        <Link to="home" smooth={true} spy={true} duration={500}>
+                            <div id="return-home"></div>
+                        </Link>
+                    </div>
 
                     <div className="footer-wrapper">
                         <div className="footer-link">

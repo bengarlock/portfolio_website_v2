@@ -9,7 +9,6 @@
 }
 
 .form-wrapper {
-    flex: 2;
     font-size: 2em;
     padding: 1em;
     display: flex;
@@ -39,9 +38,47 @@ input {
     width: 100%;
 }
 
-.footer-wrapper {
-    flex: 1;
+.return-home-wrapper {
+    padding: 1em;
     display: flex;
-    background-color: red;
     justify-content: center;
+    align-content: center;
+    background-color: black;
+}
+
+.return-home-wrapper:hover {
+    transition: .5s;
+    background-color: #6376b7;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-link{
+    height: 10em;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-link a {
+    padding: 1em;
+}
+
+.footer-link a:hover {
+    background-color: #6376b7;
+    transition: .5s;
+}
+
+#return-home {
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    transform: rotate(-45deg);
+    width: 25px;
+    height: 25px;
 }
