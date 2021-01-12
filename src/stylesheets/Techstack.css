@@ -1,23 +1,29 @@
 .tech-bubble {
     color: white;
-    text-align: center;
+    text-align: left;
     user-select: none;
     padding: 1em;
-    transition: 5s;
     flex: 1;
+    transition: 2s;
 }
 
-.tech-bubble:hover {
-    background-color: #628dff;
-    transition: 5s;
+.tech-bubble p {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
 }
+
 
 @media only screen and (min-width: 728px) {
     .tech-bubble {
-        max-height: 3em;
-        margin: 20px;
+        padding: 0;
         display: flex;
-        justify-content: center;
         align-items: center;
+        transition: 5s;
+    }
+
+    .tech-bubble:hover {
+        background-color: #628dff;
+        transition: 5s;
     }
 }

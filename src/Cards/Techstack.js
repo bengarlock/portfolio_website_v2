@@ -50,7 +50,7 @@ class Techstack extends React.Component {
                  }}
             >
                 <Heartbeat heartbeatFunction={this.hoverBackground} heartbeatInterval={3000} />
-                {this.props.technology.name}
+                <p>{this.props.technology.name}</p>
             </div>
         )
     }
