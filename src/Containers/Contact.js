@@ -67,7 +67,7 @@ class Contact extends React.Component {
 
     render() {
         return(
-            <div id="page-wrapper">
+            <section id="page-wrapper">
                 <ScrollTrigger onEnter={this.changePageEnter}>
                 <div className="buffer"></div>
                 <div className="page-header">- CONTACT -</div>
@@ -135,7 +135,7 @@ class Contact extends React.Component {
 
                 </div>
                 </ScrollTrigger>
-            </div>
+            </section>
         )
     }
 }

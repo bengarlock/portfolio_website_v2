@@ -66,7 +66,7 @@ class About extends React.Component {
 
     render() {
         return(
-            <div>
+            <section>
                     <div id="page-wrapper">
                     <div className="buffer"></div>
                     <div className="page-header">- ABOUT -</div>
@@ -104,7 +104,7 @@ class About extends React.Component {
                         </div>
                     </div>
                     </div>
-            </div>
+            </section>
 
         )
     }
