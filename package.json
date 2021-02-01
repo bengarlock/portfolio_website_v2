@@ -17,6 +17,7 @@
     "react-scroll": "^1.8.1",
     "react-scroll-trigger": "^0.6.10",
     "react-timeout": "^2.0.0",
+    "react-to-print": "^2.12.2",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
