@@ -59,8 +59,8 @@
 
 .profile-photo {
     margin-top: 20px;
-    /*width: 10em;*/
-    /*height: 10em;*/
+    width: 10em;
+    height: 10em;
     border-radius: 50%;
 }
 
