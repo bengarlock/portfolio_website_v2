@@ -13,7 +13,7 @@ class Demandbase extends React.Component {
     render() {
         return (
             <div className="container">
-                <h1>Demandbase</h1>
+                <h1>Welcome</h1>
                 <img src="https://alchemyinsurance.com/wp-content/uploads/2018/06/lightbulb.jpg" alt="light-bulb" />
                 <div>{this.renderDemandbase()}</div>
             </div>
