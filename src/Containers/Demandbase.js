@@ -8,13 +8,6 @@ class Demandbase extends React.Component {
             <div className="container">
                 <h1>Demandbase</h1>
                 <img src="https://alchemyinsurance.com/wp-content/uploads/2018/06/lightbulb.jpg" alt="light-bulb" />
-
-                <script>
-                    (function(d,b,a,s,e){var t=b.createElement(a),
-                    fs=b.getElementsByTagName(a)[0];t.async=1;t.id=e;t.src=s;
-                    fs.parentNode.insertBefore(t,fs);})
-                    (window,document,'script','https://tag.demandbase.com/d409891be0b1d71b.min.js','demandbase_js_lib');
-                </script>
             </div>
         )
     }
