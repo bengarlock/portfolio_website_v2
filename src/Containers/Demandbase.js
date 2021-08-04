@@ -4,10 +4,19 @@ import "../stylesheets/Demandbase.css"
 class Demandbase extends React.Component {
 
     renderDemandbase = () => {
-        return ((function(d,b,a,s,e){var t=b.createElement(a),
-            fs=b.getElementsByTagName(a)[0];t.async=1;t.id=e;t.src=s;
-            fs.parentNode.insertBefore(t,fs);})
-        (window,document,'script','https://tag.demandbase.com/d409891be0b1d71b.min.js','demandbase_js_lib'))
+        return (
+            (function(d,b,a,s,e){
+                var t = b.createElement(a),
+                    fs = b.getElementsByTagName(a)[0];
+                    t.async = 1;
+                    t.id = e;
+                    t.src = s;
+                    fs.parentNode.insertBefore(t,fs);
+                    console.log("a = ", a)
+                    console.log("s = ", s)
+                    console.log("e = ", e)
+            })
+            (window,document,'script','https://tag.demandbase.com/d409891be0b1d71b.min.js','demandbase_js_lib'))
     }
 
     render() {
