@@ -21,7 +21,7 @@ class Portfolio extends React.Component {
                 id: 1,
                 name: "Table Host",
                 tech: ["react-js", "rails", "django"],
-                link: "https://www.bengarlock.com:6320/",
+                link: "https://www.bengarlock.com/tablehost",
                 bg_image: tablehost
             },
             {
