@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.376e645b.chunk.css",
+    "main.js": "/static/js/main.f4bb6c1a.chunk.js",
+    "main.js.map": "/static/js/main.f4bb6c1a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.32cf7ab3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.32cf7ab3.js.map",
+    "static/js/2.f0c8a85d.chunk.js": "/static/js/2.f0c8a85d.chunk.js",
+    "static/js/2.f0c8a85d.chunk.js.map": "/static/js/2.f0c8a85d.chunk.js.map",
+    "static/js/3.1ccc2fa4.chunk.js": "/static/js/3.1ccc2fa4.chunk.js",
+    "static/js/3.1ccc2fa4.chunk.js.map": "/static/js/3.1ccc2fa4.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.376e645b.chunk.css.map": "/static/css/main.376e645b.chunk.css.map",
+    "static/js/2.f0c8a85d.chunk.js.LICENSE.txt": "/static/js/2.f0c8a85d.chunk.js.LICENSE.txt",
+    "static/media/About.css": "/static/media/technology.375f888e.jpg",
+    "static/media/flatironfurniture.8337c8bb.jpg": "/static/media/flatironfurniture.8337c8bb.jpg",
+    "static/media/fluffytail.6b9bc19e.jpg": "/static/media/fluffytail.6b9bc19e.jpg",
+    "static/media/image1.1decb802.jpg": "/static/media/image1.1decb802.jpg",
+    "static/media/image2.d8dff9f3.jpg": "/static/media/image2.d8dff9f3.jpg",
+    "static/media/image3.c0a6619e.jpg": "/static/media/image3.c0a6619e.jpg",
+    "static/media/image4.0508a5b9.jpg": "/static/media/image4.0508a5b9.jpg",
+    "static/media/image5.aff07b5d.jpg": "/static/media/image5.aff07b5d.jpg",
+    "static/media/image6.a6b02c05.jpg": "/static/media/image6.a6b02c05.jpg",
+    "static/media/image7.bc1fd5bf.jpg": "/static/media/image7.bc1fd5bf.jpg",
+    "static/media/onlinebooking.99e09412.jpg": "/static/media/onlinebooking.99e09412.jpg",
+    "static/media/profile_photo.e16ab427.jpg": "/static/media/profile_photo.e16ab427.jpg",
+    "static/media/stariron.750091a1.jpg": "/static/media/stariron.750091a1.jpg",
+    "static/media/tablehost.098c3c19.jpg": "/static/media/tablehost.098c3c19.jpg",
+    "static/media/todo.c2809ecd.jpg": "/static/media/todo.c2809ecd.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.32cf7ab3.js",
+    "static/js/2.f0c8a85d.chunk.js",
+    "static/css/main.376e645b.chunk.css",
+    "static/js/main.f4bb6c1a.chunk.js"
+  ]
+}
